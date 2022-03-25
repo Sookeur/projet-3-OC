@@ -1,0 +1,21 @@
+{
+  "name": "projet-3-oc",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sookeur/projet-3-OC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/Sookeur/projet-3-OC/issues"
+  },
+  "homepage": "https://github.com/Sookeur/projet-3-OC#readme"
+}

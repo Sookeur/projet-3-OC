@@ -1,0 +1,62 @@
+#localisation{
+    display: flex;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+    >i{
+        margin-right: 4%;
+    }
+}
+
+#explication{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 70%;
+    margin: auto;
+}
+#explo{
+    color: white;
+    text-decoration: none;
+    box-shadow: 2px 2px 2px gray;
+    background:linear-gradient($colour-secondary, $colour-primary);
+    border-radius: 25px 25px 25px 25px;
+    padding: 6%;
+}
+#tuto{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    >.bloc{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 90%;
+        height: 65px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px gray;
+        >.num{
+            color: white;
+            background-color: $colour-primary;
+            border-radius: 100%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 1%;
+            padding-top: 1%;
+            margin-left: -25%;
+            margin-right: 7%;
+            
+            +.icone{
+                color: gray;
+                margin-right: 10%;
+
+                +.text{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
