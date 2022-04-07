@@ -1,8 +1,9 @@
 @import "./utils/variables";
+@import "./components/mixin";
 
 @import "./layout/header";
 @import "./layout/footer";
 
 @import"./pages/section";
 
-@import "./base/typography";  
+@import "./base/typography"; 

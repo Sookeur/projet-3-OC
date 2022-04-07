@@ -1,12 +1,12 @@
 @font-face {
   font-family: "roboto";
-  src: url(public/font/Roboto-Regular.ttf);
+  src: url(../public/font/Roboto-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "shrikhand";
-  src: url(public/font/Shrikhand-Regular.ttf);
+  src: url(../public/font/Shrikhand-Regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
@@ -22,6 +22,30 @@ header > #logo {
 }
 header > #logo > img {
   height: 35px;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: gray;
+}
+footer > .bloc-footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  padding-bottom: 6%;
+}
+footer > .bloc-footer > img {
+  height: 25px;
+  width: 134px;
+  margin-top: 5%;
+}
+footer > .bloc-footer > img + .text-footer > p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  color: white;
+}
+footer > .bloc-footer > img + .text-footer > p > i {
+  margin-right: 3%;
 }
 
 #localisation {
@@ -43,7 +67,7 @@ header > #logo > img {
   margin: auto;
 }
 
-#explo {
+.btn {
   color: white;
   text-decoration: none;
   box-shadow: 2px 2px 2px gray;
@@ -63,28 +87,77 @@ header > #logo > img {
   align-items: center;
   justify-content: center;
   margin: auto;
-  width: 90%;
-  height: 65px;
+  width: 85%;
+  height: 80px;
   border-radius: 20px;
   box-shadow: 2px 2px 2px gray;
+  margin-bottom: 4%;
 }
 #tuto > .bloc > .num {
   color: white;
   background-color: #9356DC;
   border-radius: 100%;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-bottom: 1%;
-  padding-top: 1%;
-  margin-left: -25%;
-  margin-right: 7%;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin-left: -45%;
+  margin-right: 8%;
 }
-#tuto > .bloc > .num + .icone {
-  color: gray;
-  margin-right: 10%;
+#tuto > .bloc > .num:hover {
+  background-color: #FF79DA;
 }
-#tuto > .bloc > .num + .icone + .text {
+#tuto > .bloc > .num + .text {
   font-weight: bold;
+}
+
+#resto {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+}
+#resto > .box-resto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+#resto > .box-resto > .contener-resto {
+  display: flex;
+  border: 2px solid black;
+  border-radius: 22px 22px 22px 22px;
+  flex-direction: column;
+  width: 95%;
+}
+#resto > .box-resto > .contener-resto a {
+  text-decoration: none;
+  color: black;
+}
+#resto > .box-resto > .contener-resto a > img {
+  width: 100%;
+  height: 190px;
+  border-radius: 22px 22px 0px 0px;
+}
+#resto > .box-resto > .contener-resto a > img + .text-contener {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 5%;
+}
+#resto > .box-resto > .contener-resto a > img + .text-contener > .text {
+  display: flex;
+  flex-direction: column;
+}
+#resto > .box-resto > .contener-resto a > img + .text-contener > .text > h3 {
+  margin-bottom: 0px;
+}
+#resto > .box-resto > .contener-resto a > img + .text-contener > .text > h3 + p {
+  margin-top: 0px;
+}
+#resto > .box-resto > .contener-resto a > img + .text-contener > .text > h3 + p + .heart {
+  color: white;
+  font-size: 30px;
 }
 
 body {
