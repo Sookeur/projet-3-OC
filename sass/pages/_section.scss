@@ -45,15 +45,16 @@
             padding-top: 3px;
             margin-left: -45%;
             margin-right: 8%;
-            &:hover{
-                background-color: $colour-secondary;
-            }            
-            
-             +.text{
-                 font-weight: bold;
-                
-             }
         }
+        i{
+            font-size: 20px;
+            width: 30px;
+            height: 20px;
+        }
+        .text{
+            font-weight: bold;
+           
+       }       
     }
 }
 
@@ -94,12 +95,13 @@
                                 +p{
                                     margin-top: 0px;
 
-                                    +.heart{
-                                        color: white;
-                                        font-size: 30px;
-                                    }
+
                                 }
                             }
+                        }
+                        .heart{
+                            color: $colour-quaternaire;
+                            font-size: 30px;
                         }
                     }
                 }

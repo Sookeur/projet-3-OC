@@ -1,22 +1,23 @@
 footer{
     margin-top: 30px;
-    background-color: gray;
+    background-color: $colour-quaternaire;
     >.bloc-footer{
         display: flex;
         flex-direction: column;
         margin-left: 5%; 
-        padding-bottom: 6%;     
-        >img{
-            height: 25px;
-            width: 134px;
-            margin-top: 5%;
-            +.text-footer >p{
-                margin-top: 10px;
-                margin-bottom: 0px;
-                color: white;
-                >i{
-                    margin-right: 3%;
-                }
+        padding-bottom: 6%;
+        color: white;
+
+        h2{
+            font-family: 'Shrikhand', cursive;
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-bottom: 0px;
+            margin-top: 10px;
+            >i{
+                width: 22px;
             }
         }
     }

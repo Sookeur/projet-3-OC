@@ -1,8 +1,9 @@
 header{
     display: flex;
-    box-shadow: 1px 0px 2px grey;
+    box-shadow: 2px -4px 14px $colour-quaternaire;
     justify-content: center;
     align-items: center;
+    position: relative;
     >#logo{
         margin-top: 7%;
         margin-bottom: 1%;

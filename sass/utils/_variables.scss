@@ -1,18 +1,4 @@
 $colour-primary: #9356DC;
 $colour-secondary: #FF79DA;
 $colour-tertiaire: #99E2D0;
-    
-
-@font-face {
-    font-family:"roboto";
-    src: url(../public/font/Roboto-Regular.ttf);
-    
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family:"shrikhand";
-    src: url(../public/font/Shrikhand-Regular.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
+$colour-quaternaire: rgb(53, 53, 53);

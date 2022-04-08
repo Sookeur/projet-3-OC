@@ -1,20 +1,9 @@
-@font-face {
-  font-family: "roboto";
-  src: url(../public/font/Roboto-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "shrikhand";
-  src: url(../public/font/Shrikhand-Regular.ttf);
-  font-weight: normal;
-  font-style: normal;
-}
 header {
   display: flex;
-  box-shadow: 1px 0px 2px grey;
+  box-shadow: 2px -4px 14px #353535;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 header > #logo {
   margin-top: 7%;
@@ -26,26 +15,26 @@ header > #logo > img {
 
 footer {
   margin-top: 30px;
-  background-color: gray;
+  background-color: #353535;
 }
 footer > .bloc-footer {
   display: flex;
   flex-direction: column;
   margin-left: 5%;
   padding-bottom: 6%;
-}
-footer > .bloc-footer > img {
-  height: 25px;
-  width: 134px;
-  margin-top: 5%;
-}
-footer > .bloc-footer > img + .text-footer > p {
-  margin-top: 10px;
-  margin-bottom: 0px;
   color: white;
 }
-footer > .bloc-footer > img + .text-footer > p > i {
-  margin-right: 3%;
+footer > .bloc-footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+footer > .bloc-footer p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+footer > .bloc-footer p > i {
+  width: 22px;
 }
 
 #localisation {
@@ -104,10 +93,12 @@ footer > .bloc-footer > img + .text-footer > p > i {
   margin-left: -45%;
   margin-right: 8%;
 }
-#tuto > .bloc > .num:hover {
-  background-color: #FF79DA;
+#tuto > .bloc i {
+  font-size: 20px;
+  width: 30px;
+  height: 20px;
 }
-#tuto > .bloc > .num + .text {
+#tuto > .bloc .text {
   font-weight: bold;
 }
 
@@ -155,14 +146,14 @@ footer > .bloc-footer > img + .text-footer > p > i {
 #resto > .box-resto > .contener-resto a > img + .text-contener > .text > h3 + p {
   margin-top: 0px;
 }
-#resto > .box-resto > .contener-resto a > img + .text-contener > .text > h3 + p + .heart {
-  color: white;
+#resto > .box-resto > .contener-resto a > img + .text-contener .heart {
+  color: #353535;
   font-size: 30px;
 }
 
 body {
   margin: 0px;
-  font-family: "roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
