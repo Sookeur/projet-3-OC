@@ -1,1 +1,1 @@
-header{display:flex;box-shadow:1px 0px 2px gray;justify-content:center;align-items:center}header>#logo{margin-top:7%;margin-bottom:1%}header>#logo>img{height:35px}
+header{display:flex;box-shadow:2px -4px 14px #353535;justify-content:flex-end;position:relative;flex-direction:row-reverse;align-items:center}header>#logo{margin-top:7%;margin-bottom:1%}header>#logo>img{height:35px}header a{padding-right:14%;font-size:29px;margin-left:7%;margin-top:4%;text-decoration:none}

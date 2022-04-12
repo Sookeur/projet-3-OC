@@ -79,29 +79,44 @@
                     width: 100%;
                     height: 190px;
                     border-radius: 22px 22px 0px 0px;
-
-                    +.text-contener{
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: space-between;
-                        margin-left: 3%;
-                        margin-right: 5%;
-                        >.text{
-                            display: flex;
-                            flex-direction: column;
-                            >h3{
-                                margin-bottom: 0px;
-                                +p{
-                                    margin-top: 0px;
-
-
-                                }
-                            }
+                }
+            }
+            .text-contener{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 3%;
+                margin-right: 5%;
+                >.text{
+                    display: flex;
+                    flex-direction: column;
+                    >h3{
+                        margin-bottom: 0px;
+                        +p{
+                            margin-top: 0px;
                         }
-                        .heart{
-                            color: $colour-quaternaire;
-                            font-size: 30px;
+                    }
+                }
+            }
+            .heart{
+                font-size: 25px;
+                >.coeur-plein{
+                    display: none;
+                    &:hover{
+                        display: inline;
+                        color: $colour-secondary;
+                        &:active{
+                            display: inline;
+                            color: $colour-secondary;
+                        }
+                    }
+                }
+                >.coeur{
+                    &:hover{
+                        display: none;
+                        &:active{
+                            display: none;
                         }
                     }
                 }

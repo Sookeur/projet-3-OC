@@ -2,7 +2,8 @@
     color: white;
     text-decoration: none;
     box-shadow: 2px 2px 2px gray;
-    background:linear-gradient($colour-secondary, $colour-primary);
+    background: $gradient;
     border-radius: 25px 25px 25px 25px;
     padding: 6%;
 }
+
