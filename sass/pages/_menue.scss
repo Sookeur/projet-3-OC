@@ -4,13 +4,43 @@ img{
 }
 .menue{
     margin-top: -50px;
-    background-color: wheat;
+    background-color: white;
     border-radius: 35px 35px 0px 0px;
     position: absolute;
     width: 100%;
     
-    .nom-menue{
+    .nom_menue{
         display: flex;
-        border-radius: 22px 22px 0px 0px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 3%;
+        margin-right: 8%;
+        h2{
+            font-family: "Shrikhand", cursive;
+        }
+        >.heart{
+            font-size: 25px;
+            >.coeur-plein{
+                opacity: 0;
+                &:hover{
+                    opacity: 1;
+                    color: $colour-secondary;
+                }
+            }
+            >.coeur{
+                    position: absolute;
+            }
+        }
+        .box-choix{
+            display: flex;
+        }
+    }
+    
+    h3{
+        border-bottom: 2px solid $colour-tertiaire;
+        width: 46px;
+        padding-bottom: 5px;
+        margin-left: 3%;
     }
 }

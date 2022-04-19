@@ -1,4 +1,20 @@
-header {
+#index {
+  display: flex;
+  box-shadow: 2px -4px 14px #353535;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+#index > #logo {
+  margin-top: 7%;
+  margin-bottom: 1%;
+}
+#index > #logo > img {
+  height: 35px;
+}
+
+#menue {
   display: flex;
   box-shadow: 2px -4px 14px #353535;
   justify-content: flex-end;
@@ -6,19 +22,20 @@ header {
   flex-direction: row-reverse;
   align-items: center;
 }
-header > #logo {
+#menue > #logo {
   margin-top: 7%;
   margin-bottom: 1%;
 }
-header > #logo > img {
+#menue > #logo > img {
   height: 35px;
 }
-header a {
+#menue a {
   padding-right: 14%;
   font-size: 29px;
   margin-left: 7%;
   margin-top: 4%;
   text-decoration: none;
+  color: black;
 }
 
 footer {
@@ -82,13 +99,19 @@ footer > .bloc-footer p > i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin: auto;
-  width: 85%;
-  height: 80px;
+  justify-content: flex-start;
+  margin-left: 3%;
+  width: 90%;
+  height: 75px;
   border-radius: 20px;
-  box-shadow: 2px 2px 2px gray;
-  margin-bottom: 4%;
+  box-shadow: 1px 1px 1px #deebff;
+  margin-bottom: 5%;
+}
+#tuto > .bloc:hover {
+  background-color: red;
+}
+#tuto > .bloc:hover i {
+  color: #9356DC;
 }
 #tuto > .bloc > .num {
   color: white;
@@ -98,13 +121,15 @@ footer > .bloc-footer p > i {
   padding-right: 8px;
   padding-bottom: 3px;
   padding-top: 3px;
-  margin-left: -45%;
+  margin-left: -11px;
   margin-right: 8%;
 }
 #tuto > .bloc i {
   font-size: 20px;
   width: 30px;
-  height: 20px;
+  color: gray;
+  text-align: center;
+  padding-right: 20px;
 }
 #tuto > .bloc .text {
   font-weight: bold;
@@ -122,7 +147,7 @@ footer > .bloc-footer p > i {
 }
 #resto > .box-resto > .contener-resto {
   display: flex;
-  border: 2px solid black;
+  box-shadow: 1px 1px 1px #deebff;
   border-radius: 22px 22px 22px 22px;
   flex-direction: column;
   width: 95%;
@@ -158,21 +183,14 @@ footer > .bloc-footer p > i {
   font-size: 25px;
 }
 #resto > .box-resto > .contener-resto .heart > .coeur-plein {
-  display: none;
+  opacity: 0;
 }
 #resto > .box-resto > .contener-resto .heart > .coeur-plein:hover {
-  display: inline;
+  opacity: 1;
   color: #FF79DA;
 }
-#resto > .box-resto > .contener-resto .heart > .coeur-plein:hover:active {
-  display: inline;
-  color: #FF79DA;
-}
-#resto > .box-resto > .contener-resto .heart > .coeur:hover {
-  display: none;
-}
-#resto > .box-resto > .contener-resto .heart > .coeur:hover:active {
-  display: none;
+#resto > .box-resto > .contener-resto .heart > .coeur {
+  position: absolute;
 }
 
 img {
@@ -182,14 +200,43 @@ img {
 
 .menue {
   margin-top: -50px;
-  background-color: wheat;
+  background-color: white;
   border-radius: 35px 35px 0px 0px;
   position: absolute;
   width: 100%;
 }
-.menue .nom-menue {
+.menue .nom_menue {
   display: flex;
-  border-radius: 22px 22px 0px 0px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 8%;
+}
+.menue .nom_menue h2 {
+  font-family: "Shrikhand", cursive;
+}
+.menue .nom_menue > .heart {
+  font-size: 25px;
+}
+.menue .nom_menue > .heart > .coeur-plein {
+  opacity: 0;
+}
+.menue .nom_menue > .heart > .coeur-plein:hover {
+  opacity: 1;
+  color: #FF79DA;
+}
+.menue .nom_menue > .heart > .coeur {
+  position: absolute;
+}
+.menue .nom_menue .box-choix {
+  display: flex;
+}
+.menue h3 {
+  border-bottom: 2px solid #99E2D0;
+  width: 46px;
+  padding-bottom: 5px;
+  margin-left: 3%;
 }
 
 body {

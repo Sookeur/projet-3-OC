@@ -28,13 +28,19 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        margin: auto;
-        width: 85%;
-        height: 80px;
+        justify-content: flex-start;
+        margin-left: 3%;
+        width: 90%;
+        height: 75px;
         border-radius: 20px;
-        box-shadow: 2px 2px 2px gray;
-        margin-bottom: 4%;
+        box-shadow: 1px 1px 1px #deebff;
+        margin-bottom: 5%;
+        &:hover{
+            background-color: red;
+            i{
+                color: $colour-primary;
+            }
+        }
         >.num{
             color: white;
             background-color: $colour-primary;
@@ -43,13 +49,15 @@
             padding-right: 8px;
             padding-bottom: 3px;
             padding-top: 3px;
-            margin-left: -45%;
+            margin-left: -11px;
             margin-right: 8%;
         }
         i{
             font-size: 20px;
             width: 30px;
-            height: 20px;
+            color: gray;
+            text-align: center;
+            padding-right: 20px;
         }
         .text{
             font-weight: bold;
@@ -68,7 +76,7 @@
         margin-bottom: 3%;
         >.contener-resto{
             display: flex;
-            border: 2px solid black;
+            box-shadow: 1px 1px 1px #deebff;
             border-radius: 22px 22px 22px 22px;
             flex-direction: column;
             width: 95%;
@@ -102,23 +110,14 @@
             .heart{
                 font-size: 25px;
                 >.coeur-plein{
-                    display: none;
+                    opacity: 0;
                     &:hover{
-                        display: inline;
+                        opacity: 1;
                         color: $colour-secondary;
-                        &:active{
-                            display: inline;
-                            color: $colour-secondary;
-                        }
                     }
                 }
                 >.coeur{
-                    &:hover{
-                        display: none;
-                        &:active{
-                            display: none;
-                        }
-                    }
+                        position: absolute;
                 }
             }
         }
