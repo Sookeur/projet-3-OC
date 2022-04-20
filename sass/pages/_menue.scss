@@ -43,4 +43,32 @@ img{
         padding-bottom: 5px;
         margin-left: 3%;
     }
+    .box-choix{
+        display: flex;
+        margin-left: 3%;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        width: 93%;
+        height: 70px;
+        box-shadow: 1px 1px 25px #353535;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        justify-content: space-between;
+        .text-m{
+            margin: 5px;
+            margin-left: 15px;
+        }
+        .prix{
+            font-weight: bold;
+            padding-top: 25px;
+        }
+        .validation{
+            color: white;
+            background-color: $colour-tertiaire;
+            padding: 19px;
+            font-size: 26px;
+            border-radius: 0px 20px 20px 0px;
+        }
+    }
 }

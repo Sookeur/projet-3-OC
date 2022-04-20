@@ -238,6 +238,34 @@ img {
   padding-bottom: 5px;
   margin-left: 3%;
 }
+.menue .box-choix {
+  display: flex;
+  margin-left: 3%;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  width: 93%;
+  height: 70px;
+  box-shadow: 1px 1px 25px #353535;
+  border-radius: 20px;
+  margin-bottom: 5%;
+  justify-content: space-between;
+}
+.menue .box-choix .text-m {
+  margin: 5px;
+  margin-left: 15px;
+}
+.menue .box-choix .prix {
+  font-weight: bold;
+  padding-top: 25px;
+}
+.menue .box-choix .validation {
+  color: white;
+  background-color: #99E2D0;
+  padding: 19px;
+  font-size: 26px;
+  border-radius: 0px 20px 20px 0px;
+}
 
 body {
   margin: 0px;
