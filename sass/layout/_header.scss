@@ -8,8 +8,19 @@
     >#logo{
         margin-top: 7%;
         margin-bottom: 1%;
+        @media screen and (min-width: 750px){
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+        @media screen and (min-width: 751px){
+            margin-top: 2%;
+            margin-bottom: 1%;
+        }
         >img{
             height: 35px;
+            @media screen and (min-width: 750px){
+                height: 50px;
+            }
         }
     }    
 }
@@ -24,8 +35,15 @@
     >#logo{
         margin-top: 7%;
         margin-bottom: 1%;
+        @media screen and (min-width: 750px){
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
         >img{
             height: 35px;
+            @media screen and (min-width: 750px){
+                height: 50px;
+            }
         }
     }
     a{
@@ -35,6 +53,12 @@
         margin-top: 4%;
         text-decoration: none;
         color: black;
+        @media screen and (min-width: 750px){
+            padding-right: 20%;
+            font-size: 30px;
+            margin-left: 5%;
+            margin-top: 0%;
+        }
     }
 }
 

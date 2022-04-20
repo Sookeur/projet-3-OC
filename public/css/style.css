@@ -10,8 +10,25 @@
   margin-top: 7%;
   margin-bottom: 1%;
 }
+@media screen and (min-width: 750px) {
+  #index > #logo {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 751px) {
+  #index > #logo {
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+}
 #index > #logo > img {
   height: 35px;
+}
+@media screen and (min-width: 750px) {
+  #index > #logo > img {
+    height: 50px;
+  }
 }
 
 #menue {
@@ -26,8 +43,19 @@
   margin-top: 7%;
   margin-bottom: 1%;
 }
+@media screen and (min-width: 750px) {
+  #menue > #logo {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+}
 #menue > #logo > img {
   height: 35px;
+}
+@media screen and (min-width: 750px) {
+  #menue > #logo > img {
+    height: 50px;
+  }
 }
 #menue a {
   padding-right: 14%;
@@ -36,6 +64,14 @@
   margin-top: 4%;
   text-decoration: none;
   color: black;
+}
+@media screen and (min-width: 750px) {
+  #menue a {
+    padding-right: 20%;
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 0%;
+  }
 }
 
 footer {
@@ -68,6 +104,12 @@ footer > .bloc-footer p > i {
   align-items: center;
   justify-content: center;
 }
+@media screen and (min-width: 751px) {
+  #localisation {
+    height: 70px;
+    font-size: x-large;
+  }
+}
 #localisation > i {
   margin-right: 4%;
 }
@@ -89,11 +131,28 @@ footer > .bloc-footer p > i {
   border-radius: 25px 25px 25px 25px;
   padding: 6%;
 }
+@media screen and (min-width: 750px) {
+  .btn {
+    max-width: 180px;
+    padding: 25px;
+  }
+}
 
 #tuto {
   display: flex;
   flex-direction: column;
   margin-left: 3%;
+}
+@media screen and (min-width: 751px) {
+  #tuto {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 751px) {
+  #tuto h2 {
+    margin: auto;
+    margin-top: 5%;
+  }
 }
 #tuto > .bloc {
   display: flex;
@@ -106,6 +165,20 @@ footer > .bloc-footer p > i {
   border-radius: 20px;
   box-shadow: 1px 1px 1px #deebff;
   margin-bottom: 5%;
+}
+@media screen and (min-width: 750px) {
+  #tuto > .bloc {
+    margin: auto;
+    width: 70%;
+    margin-bottom: 3%;
+  }
+}
+@media screen and (min-width: 751px) {
+  #tuto > .bloc {
+    margin: auto;
+    width: 35%;
+    margin-top: 3%;
+  }
 }
 #tuto > .bloc:hover {
   background-color: red;
@@ -124,12 +197,23 @@ footer > .bloc-footer p > i {
   margin-left: -11px;
   margin-right: 8%;
 }
+@media screen and (min-width: 751px) {
+  #tuto > .bloc > .num {
+    margin-right: 16%;
+  }
+}
 #tuto > .bloc i {
   font-size: 20px;
   width: 30px;
   color: gray;
   text-align: center;
   padding-right: 20px;
+}
+@media screen and (min-width: 751px) {
+  #tuto > .bloc i {
+    padding-right: 100px;
+    font-size: 25px;
+  }
 }
 #tuto > .bloc .text {
   font-weight: bold;
@@ -140,14 +224,31 @@ footer > .bloc-footer p > i {
   flex-direction: column;
   margin-left: 3%;
 }
+@media screen and (min-width: 751px) {
+  #resto {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 751px) {
+  #resto h2 {
+    margin-top: 5%;
+  }
+}
 #resto > .box-resto {
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
 }
+@media screen and (min-width: 750px) {
+  #resto > .box-resto {
+    margin: auto;
+    width: 500px;
+    margin-bottom: 5%;
+  }
+}
 #resto > .box-resto > .contener-resto {
   display: flex;
-  box-shadow: 1px 1px 1px #deebff;
+  box-shadow: 1px 1px 1px #a79c9c;
   border-radius: 22px 22px 22px 22px;
   flex-direction: column;
   width: 95%;
@@ -202,7 +303,7 @@ img {
   margin-top: -50px;
   background-color: white;
   border-radius: 35px 35px 0px 0px;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 .menue .nom_menue {
@@ -246,18 +347,31 @@ img {
   align-items: center;
   width: 93%;
   height: 70px;
-  box-shadow: 1px 1px 25px #353535;
+  box-shadow: 1px 1px 25px #a79c9c;
   border-radius: 20px;
   margin-bottom: 5%;
   justify-content: space-between;
 }
-.menue .box-choix .text-m {
+@media screen and (min-width: 750px) {
+  .menue .box-choix {
+    margin: auto;
+    width: 70%;
+    margin-bottom: 3%;
+  }
+}
+.menue .box-choix div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+.menue .box-choix h4, .menue .box-choix p {
   margin: 5px;
-  margin-left: 15px;
 }
 .menue .box-choix .prix {
   font-weight: bold;
-  padding-top: 25px;
+  padding-top: 30px;
+  text-align: center;
 }
 .menue .box-choix .validation {
   color: white;
@@ -265,6 +379,29 @@ img {
   padding: 19px;
   font-size: 26px;
   border-radius: 0px 20px 20px 0px;
+}
+.menue .btn_commander {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px grey;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  padding: 6%;
+  text-align: center;
+  justify-content: center;
+  width: 165px;
+  height: 1px;
+  margin: auto;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+@media screen and (min-width: 750px) {
+  .menue .btn_commander {
+    max-width: 180px;
+    padding: 25px;
+  }
 }
 
 body {

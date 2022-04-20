@@ -6,7 +6,7 @@ img{
     margin-top: -50px;
     background-color: white;
     border-radius: 35px 35px 0px 0px;
-    position: absolute;
+    position: relative;
     width: 100%;
     
     .nom_menue{
@@ -51,17 +51,28 @@ img{
         align-items: center;
         width: 93%;
         height: 70px;
-        box-shadow: 1px 1px 25px #353535;
+        box-shadow: 1px 1px 25px #a79c9c;
         border-radius: 20px;
         margin-bottom: 5%;
         justify-content: space-between;
-        .text-m{
+        @media screen and (min-width: 750px){
+            margin:auto ;
+            width: 70%;
+            margin-bottom: 3%;
+        }
+        div{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            padding: 0 15px;
+        }
+        h4, p{
             margin: 5px;
-            margin-left: 15px;
         }
         .prix{
             font-weight: bold;
-            padding-top: 25px;
+            padding-top: 30px;
+            text-align: center;
         }
         .validation{
             color: white;
@@ -70,5 +81,8 @@ img{
             font-size: 26px;
             border-radius: 0px 20px 20px 0px;
         }
+    }
+    .btn_commander{
+        @include btn_commander;
     }
 }
