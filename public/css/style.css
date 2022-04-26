@@ -169,7 +169,7 @@ footer > .bloc-footer a {
   width: 90%;
   height: 75px;
   border-radius: 20px;
-  box-shadow: 1px 1px 1px #deebff;
+  box-shadow: 1px 1px 7px gray;
   margin-bottom: 5%;
 }
 @media screen and (min-width: 750px) {
@@ -187,7 +187,7 @@ footer > .bloc-footer a {
   }
 }
 #tuto > .bloc:hover {
-  background-color: red;
+  background-color: #f5edff;
 }
 #tuto > .bloc:hover i {
   color: #9356DC;
@@ -195,7 +195,7 @@ footer > .bloc-footer a {
 #tuto > .bloc > .num {
   color: white;
   background-color: #9356DC;
-  border-radius: 100%;
+  border-radius: 50%;
   padding-left: 8px;
   padding-right: 8px;
   padding-bottom: 3px;
@@ -291,10 +291,10 @@ footer > .bloc-footer a {
 }
 #resto > .box-resto > .contener-resto .heart > .coeur-plein {
   opacity: 0;
+  color: #FF79DA;
 }
 #resto > .box-resto > .contener-resto .heart > .coeur-plein:hover {
   opacity: 1;
-  color: #FF79DA;
 }
 #resto > .box-resto > .contener-resto .heart > .coeur {
   position: absolute;
