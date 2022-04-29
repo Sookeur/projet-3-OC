@@ -120,17 +120,26 @@
         }
         >.contener-resto{
             display: flex;
-            box-shadow: 1px 1px 1px #a79c9c;
+            box-shadow: 1px 1px 25px #a79c9c;
             border-radius: 22px 22px 22px 22px;
             flex-direction: column;
             width: 95%;
             a {
                 text-decoration: none;
                 color: black;
+                position: relative;
                 >img{
                     width: 100%;
                     height: 190px;
                     border-radius: 22px 22px 0px 0px;
+                }
+                p{
+                    position: absolute;
+                    background-color: $colour-tertiaire;
+                    padding: 10px 15px 10px 15px;
+                    border-radius: 5px;
+                    right: 20px;
+                    top: 5px;
                 }
             }
             .text-contener{
@@ -152,17 +161,7 @@
                 }
             }
             .heart{
-                font-size: 25px;
-                >.coeur-plein{
-                    opacity: 0;
-                    color: $colour-secondary;
-                    &:hover{
-                        opacity: 1;
-                    }
-                }
-                >.coeur{
-                        position: absolute;
-                }
+                @include heart;
             }
         }
     }
