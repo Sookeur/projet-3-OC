@@ -32,6 +32,10 @@
     position: relative;
     flex-direction: row-reverse;
     align-items: center;
+    padding-right: 30%;
+    @media screen and (min-width: 750px) {
+        padding-right: 40%;
+    }
     >#logo{
         margin-top: 7%;
         margin-bottom: 1%;
@@ -47,14 +51,14 @@
         }
     }
     a{
-        padding-right: 14%;
+        padding-right: 25%;
         font-size: 29px;
         margin-left: 7%;
         margin-top: 4%;
         text-decoration: none;
         color: black;
         @media screen and (min-width: 750px){
-            padding-right: 20%;
+            padding-right: 60%;
             font-size: 30px;
             margin-left: 5%;
             margin-top: 0%;
