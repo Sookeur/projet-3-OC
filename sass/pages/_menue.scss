@@ -82,11 +82,19 @@ img{
             text-align: center;
         }
         .validation{
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
             background-color: $colour-tertiaire;
-            padding: 19px;
             font-size: 26px;
             border-radius: 0px 20px 20px 0px;
+            opacity: 0;
+            height: 100%;
+        }
+        .check{
+            opacity: 0;
+            font-size: 20px;
         }
     }
     .btn_commander{

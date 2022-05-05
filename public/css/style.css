@@ -1,13 +1,14 @@
 .loader {
   position: absolute;
-  background-color: black;
+  background-color: white;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: out 8s;
+  animation: out 8s ease-in-out;
+  animation-iteration-count: 1;
 }
 @keyframes out {
   0% {
@@ -15,7 +16,6 @@
   }
   100% {
     opacity: 0;
-    animation: 8s ease-out;
   }
 }
 .loader .lettre {
@@ -25,6 +25,7 @@
   margin-bottom: 3%;
   color: #cccbcb91;
   animation: flash 2s linear infinite;
+  animation-duration: 8s;
 }
 @keyframes flash {
   0% {
@@ -46,6 +47,7 @@
   -webkit-animation: spin 3s linear infinite;
   -o-animation: spin 3s linear infinite;
   animation: spin 2s linear infinite;
+  animation-duration: 8s;
 }
 @keyframes spin {
   0% {
@@ -53,6 +55,59 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+.box-choix:hover .validation {
+  opacity: 1;
+  animation: slide 1s linear forwards;
+}
+@keyframes slide {
+  from {
+    width: 0;
+    opacity: 1;
+  }
+  to {
+    width: 70px;
+    opacity: 1;
+  }
+}
+.box-choix:hover .check {
+  animation: rond 1s ease forwards;
+}
+@keyframes rond {
+  from {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-360deg);
+  }
+}
+
+.coeur-plein:hover {
+  transition: all 1s linear 0s;
+  height: 100%;
+}
+
+.box-choix {
+  animation: menue 2s ease-in forwards;
+  opacity: 0;
+  margin-top: 15%;
+}
+@keyframes menue {
+  0% {
+    opacity: 0.25;
+    margin-top: 10%;
+  }
+  50% {
+    opacity: 0.5;
+    margin-top: 5%;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0%;
   }
 }
 
@@ -377,9 +432,11 @@ footer > .bloc-footer a {
   position: absolute;
   opacity: 0;
   left: 0;
+  height: 0;
 }
 #resto > .box-resto > .contener-resto .heart .coeur-plein:hover {
   opacity: 1;
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -436,9 +493,11 @@ img {
   position: absolute;
   opacity: 0;
   left: 0;
+  height: 0;
 }
 .menue .nom_menue > .heart .coeur-plein:hover {
   opacity: 1;
+  height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -494,11 +553,19 @@ img {
   text-align: center;
 }
 .menue .box-choix .validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
   background-color: #99E2D0;
-  padding: 19px;
   font-size: 26px;
   border-radius: 0px 20px 20px 0px;
+  opacity: 0;
+  height: 100%;
+}
+.menue .box-choix .check {
+  opacity: 0;
+  font-size: 20px;
 }
 .menue .btn_commander {
   display: flex;
