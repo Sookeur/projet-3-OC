@@ -57,6 +57,10 @@
         opacity: 0;
         left: 0;
         height: 0;
+        background: -webkit-gradient(linear, left top, left bottom, from($colour-secondary), to($colour-primary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: initial;
         &:hover{
         opacity: 1;
         height: 100%;
