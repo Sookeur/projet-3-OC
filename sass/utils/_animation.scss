@@ -75,10 +75,10 @@
         @keyframes slide {
             from{
                 width: 0px;
-                opacity: 1;
+                opacity: 0;
             }
             to{
-                width: 0px;
+                width: 60px;
                 opacity: 1;
             }
             
@@ -89,6 +89,7 @@
         @keyframes rond {
             from{
                 opacity: 1;
+                padding: 20px;
                 transform: rotate(0deg);
             }
             to{

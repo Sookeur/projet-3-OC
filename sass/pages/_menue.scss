@@ -19,6 +19,7 @@ img{
         margin-top: -140px;
         box-shadow: 1px 1px 25px #a79c9c;
         padding-bottom: 2%;
+        border-radius: 35px 35px 35px 35px;
     }
     
     .nom_menue{
@@ -94,7 +95,7 @@ img{
             height: 100%;
         }
         .check{
-            opacity: 0;
+            opacity: 1;
             font-size: 20px;
         }
     }
