@@ -68,30 +68,27 @@
 
 .box-choix:hover .validation {
   opacity: 1;
-  animation: slide 1s linear forwards;
+  animation: slide 500ms linear forwards;
 }
 @keyframes slide {
   from {
-    width: 0px;
-    opacity: 0;
+    margin-right: -80px;
   }
   to {
-    width: 60px;
-    opacity: 1;
+    margin-right: 0;
   }
 }
 .box-choix:hover .check {
-  animation: rond 1s ease forwards;
+  padding: 0px;
+  animation: rond 700ms ease forwards;
 }
 @keyframes rond {
   from {
-    opacity: 1;
     padding: 20px;
-    transform: rotate(0deg);
+    transform: rotate(-360deg);
   }
   to {
-    opacity: 1;
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -548,6 +545,7 @@ img {
   border-radius: 20px;
   margin-bottom: 5%;
   justify-content: space-between;
+  overflow: hidden;
 }
 @media screen and (min-width: 750px) {
   .menue .box-choix {
@@ -558,12 +556,13 @@ img {
 }
 .menue .box-choix div {
   display: flex;
-  width: 100%;
+  width: calc(100% - 0px);
   justify-content: space-between;
   padding: 0 15px;
 }
 .menue .box-choix span {
   text-overflow: ellipsis;
+  width: calc(100% - 40px);
 }
 .menue .box-choix h4, .menue .box-choix p {
   margin: 5px 0;
@@ -575,6 +574,7 @@ img {
   font-weight: bold;
   padding-top: 30px;
   text-align: center;
+  width: 40px;
 }
 .menue .box-choix .validation {
   display: flex;
@@ -584,8 +584,9 @@ img {
   background-color: #99E2D0;
   font-size: 26px;
   border-radius: 0px 20px 20px 0px;
-  opacity: 0;
   height: 100%;
+  margin-right: -80px;
+  width: 80px;
 }
 .menue .box-choix .check {
   opacity: 1;
