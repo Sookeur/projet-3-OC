@@ -71,10 +71,10 @@
 .box-choix:hover{
     .validation{
         opacity: 1;
-        animation: slide 500ms linear forwards;
+        animation: slide 700ms linear forwards;
         @keyframes slide {
             from{
-                margin-right: -80px;
+                margin-right: -100px;
             }
             to{
                 margin-right: 0;
@@ -88,10 +88,10 @@
         @keyframes rond {
             from{
                 padding: 20px;
-                transform: rotate(-360deg);
+                transform: rotate(360deg);
             }
             to{
-                transform: rotate(360deg);
+                transform: rotate(-360deg);
             }
             
         }

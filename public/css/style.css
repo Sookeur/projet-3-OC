@@ -68,11 +68,11 @@
 
 .box-choix:hover .validation {
   opacity: 1;
-  animation: slide 500ms linear forwards;
+  animation: slide 700ms linear forwards;
 }
 @keyframes slide {
   from {
-    margin-right: -80px;
+    margin-right: -100px;
   }
   to {
     margin-right: 0;
@@ -85,10 +85,10 @@
 @keyframes rond {
   from {
     padding: 20px;
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -562,7 +562,7 @@ img {
 }
 .menue .box-choix span {
   text-overflow: ellipsis;
-  width: calc(100% - 40px);
+  width: calc(100% - 80px);
 }
 .menue .box-choix h4, .menue .box-choix p {
   margin: 5px 0;
@@ -585,8 +585,8 @@ img {
   font-size: 26px;
   border-radius: 0px 20px 20px 0px;
   height: 100%;
-  margin-right: -80px;
-  width: 80px;
+  margin-right: -100px;
+  width: 100px;
 }
 .menue .box-choix .check {
   opacity: 1;
