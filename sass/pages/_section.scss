@@ -19,6 +19,13 @@
     flex-wrap: nowrap;
     width: 70%;
     margin: auto;
+    text-align: center;
+    @media screen and (min-width: 751px){
+        height: 230px;
+    }
+}
+h2{
+    width: 86%;
 }
 .btn{
     @include btn;
@@ -35,6 +42,7 @@
         @media screen and (min-width: 751px){
         margin: auto;
         margin-top: 5%;
+        width: 10%;
         }
     }
     >.bloc{
@@ -46,7 +54,7 @@
         width: 90%;
         height: 75px;
         border-radius: 20px;
-        box-shadow: 1px 1px 7px gray;
+        box-shadow: 0px 3px 20px 0px #b5b5b5bd;
         margin-bottom: 5%;
         @media screen and (min-width: 750px){
             margin:auto ;
@@ -107,9 +115,18 @@
     h2{
         @media screen and (min-width: 751px){
             margin-top: 5%;
+            width: 10%;
         }
     }
-    >.box-resto{
+    div{
+        @media screen and (min-width: 751px){
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin-top: 3%;
+        }
+    }
+    .box-resto{
         display: flex;
         flex-direction: column;
         margin-bottom: 3%;
@@ -120,7 +137,7 @@
         }
         >.contener-resto{
             display: flex;
-            box-shadow: 1px 1px 25px #a79c9c;
+            box-shadow: 0px 3px 20px 0px #b5b5b5bd;
             border-radius: 22px 22px 22px 22px;
             flex-direction: column;
             width: 95%;
@@ -149,6 +166,10 @@
                 justify-content: space-between;
                 margin-left: 3%;
                 margin-right: 5%;
+                @media screen and (min-width: 750px){
+                    width: 90%;
+                    margin-top: -10px;
+                }
                 >.text{
                     display: flex;
                     flex-direction: column;

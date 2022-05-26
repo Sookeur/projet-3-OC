@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  animation: out 10s linear;
+  animation: out 3s linear;
   opacity: 0;
   z-index: -100000;
   position: fixed;
@@ -71,10 +71,10 @@
   animation: slide 700ms linear forwards;
 }
 @keyframes slide {
-  from {
+  0% {
     margin-right: -100px;
   }
-  to {
+  50% {
     margin-right: 0;
   }
 }
@@ -152,6 +152,7 @@
 @media screen and (min-width: 750px) {
   #index > #logo > img {
     height: 50px;
+    width: 100%;
   }
 }
 
@@ -175,7 +176,7 @@
 }
 @media screen and (min-width: 750px) {
   #menue > #logo {
-    margin-top: 4%;
+    margin-top: 2%;
     margin-bottom: 2%;
   }
 }
@@ -185,6 +186,7 @@
 @media screen and (min-width: 750px) {
   #menue > #logo > img {
     height: 50px;
+    width: 100%;
   }
 }
 #menue a {
@@ -214,6 +216,11 @@ footer > .bloc-footer {
   margin-left: 5%;
   padding-bottom: 6%;
   color: white;
+}
+@media screen and (min-width: 751px) {
+  footer > .bloc-footer {
+    padding-bottom: 2%;
+  }
 }
 footer > .bloc-footer h2 {
   font-family: "Shrikhand", cursive;
@@ -257,18 +264,30 @@ footer > .bloc-footer a {
   flex-wrap: nowrap;
   width: 70%;
   margin: auto;
+  text-align: center;
+}
+@media screen and (min-width: 751px) {
+  #explication {
+    height: 230px;
+  }
+}
+
+h2 {
+  width: 86%;
 }
 
 .btn {
   color: white;
   text-decoration: none;
-  box-shadow: 2px 2px 2px gray;
+  box-shadow: 0px 3px 20px 0px #b5b5b5bd;
   background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 40px;
   padding: 6%;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 1000ms;
+  margin-bottom: 15%;
+  margin-top: 5%;
 }
 .btn:hover {
   transform: scale(1.15);
@@ -294,6 +313,7 @@ footer > .bloc-footer a {
   #tuto h2 {
     margin: auto;
     margin-top: 5%;
+    width: 10%;
   }
 }
 #tuto > .bloc {
@@ -305,7 +325,7 @@ footer > .bloc-footer a {
   width: 90%;
   height: 75px;
   border-radius: 20px;
-  box-shadow: 1px 1px 7px gray;
+  box-shadow: 0px 3px 20px 0px #b5b5b5bd;
   margin-bottom: 5%;
 }
 @media screen and (min-width: 750px) {
@@ -374,38 +394,47 @@ footer > .bloc-footer a {
 @media screen and (min-width: 751px) {
   #resto h2 {
     margin-top: 5%;
+    width: 10%;
   }
 }
-#resto > .box-resto {
+@media screen and (min-width: 751px) {
+  #resto div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-top: 3%;
+  }
+}
+#resto .box-resto {
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
 }
 @media screen and (min-width: 750px) {
-  #resto > .box-resto {
+  #resto .box-resto {
     margin: auto;
     width: 500px;
     margin-bottom: 5%;
   }
 }
-#resto > .box-resto > .contener-resto {
+#resto .box-resto > .contener-resto {
   display: flex;
-  box-shadow: 1px 1px 25px #a79c9c;
+  box-shadow: 0px 3px 20px 0px #b5b5b5bd;
   border-radius: 22px 22px 22px 22px;
   flex-direction: column;
   width: 95%;
 }
-#resto > .box-resto > .contener-resto a {
+#resto .box-resto > .contener-resto a {
   text-decoration: none;
   color: black;
   position: relative;
 }
-#resto > .box-resto > .contener-resto a > img {
+#resto .box-resto > .contener-resto a > img {
   width: 100%;
   height: 190px;
   border-radius: 22px 22px 0px 0px;
 }
-#resto > .box-resto > .contener-resto a p {
+#resto .box-resto > .contener-resto a p {
   position: absolute;
   background-color: #99E2D0;
   padding: 10px 15px 10px 15px;
@@ -413,7 +442,7 @@ footer > .bloc-footer a {
   right: 20px;
   top: 5px;
 }
-#resto > .box-resto > .contener-resto .text-contener {
+#resto .box-resto > .contener-resto .text-contener {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -421,17 +450,23 @@ footer > .bloc-footer a {
   margin-left: 3%;
   margin-right: 5%;
 }
-#resto > .box-resto > .contener-resto .text-contener > .text {
+@media screen and (min-width: 750px) {
+  #resto .box-resto > .contener-resto .text-contener {
+    width: 90%;
+    margin-top: -10px;
+  }
+}
+#resto .box-resto > .contener-resto .text-contener > .text {
   display: flex;
   flex-direction: column;
 }
-#resto > .box-resto > .contener-resto .text-contener > .text > h3 {
+#resto .box-resto > .contener-resto .text-contener > .text > h3 {
   margin-bottom: 0px;
 }
-#resto > .box-resto > .contener-resto .text-contener > .text > h3 + p {
+#resto .box-resto > .contener-resto .text-contener > .text > h3 + p {
   margin-top: 0px;
 }
-#resto > .box-resto > .contener-resto .heart {
+#resto .box-resto > .contener-resto .heart {
   position: relative;
   font-size: 30px;
   display: flex;
@@ -439,7 +474,7 @@ footer > .bloc-footer a {
   justify-content: flex-start;
   align-items: center;
 }
-#resto > .box-resto > .contener-resto .heart .coeur-plein {
+#resto .box-resto > .contener-resto .heart .coeur-plein {
   position: absolute;
   opacity: 0;
   left: 0;
@@ -449,7 +484,7 @@ footer > .bloc-footer a {
   -webkit-text-fill-color: transparent;
   display: initial;
 }
-#resto > .box-resto > .contener-resto .heart .coeur-plein:hover {
+#resto .box-resto > .contener-resto .heart .coeur-plein:hover {
   opacity: 1;
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
@@ -497,6 +532,7 @@ img {
 }
 .menue .nom_menue h2 {
   font-family: "Shrikhand", cursive;
+  font-size: xx-large;
 }
 .menue .nom_menue > .heart {
   position: relative;
@@ -541,7 +577,7 @@ img {
   align-items: center;
   width: 93%;
   height: 70px;
-  box-shadow: 1px 1px 25px #a79c9c;
+  box-shadow: 0px 3px 20px 0px #b5b5b5bd;
   border-radius: 20px;
   margin-bottom: 5%;
   justify-content: space-between;
@@ -598,7 +634,7 @@ img {
   text-decoration: none;
   box-shadow: 2px 2px 2px grey;
   background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 25px;
+  border-radius: 30px;
   padding: 6%;
   text-align: center;
   justify-content: center;
