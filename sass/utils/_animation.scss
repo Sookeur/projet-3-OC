@@ -73,10 +73,10 @@
         opacity: 1;
         animation: slide 700ms linear forwards;
         @keyframes slide {
-            0%{
+            from{
                 margin-right: -100px;
             }
-            50%{
+            to{
                 margin-right: 0;
             }
             

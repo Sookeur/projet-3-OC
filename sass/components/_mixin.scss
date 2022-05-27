@@ -1,7 +1,7 @@
 @mixin btn {
     color: white;
     text-decoration: none;
-    box-shadow: 0px 3px 20px 0px #b5b5b5bd;
+    box-shadow: 2px 2px 2px grey;
     background: $gradient;
     border-radius: 40px;
     padding: 6%;
@@ -12,6 +12,8 @@
     margin-top: 5%;
     &:hover{
         transform: scale(1.15);
+        box-shadow: 0px 3px 20px 0px #b5b5b5bd;
+        background-color: brightness(1.5);
     }
     @media screen and (min-width: 750px){
         max-width: 180px;
@@ -22,8 +24,8 @@
     display: flex;
     color: white;
     text-decoration: none;
-    box-shadow: 2px 2px 2px grey;
-    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 2px 2px 2px #b5b5b5bd;
+    background:linear-gradient(#FF79DA, #9356DC);
     border-radius: 30px;
     padding: 6%;
     text-align: center;
@@ -34,11 +36,13 @@
     align-items: center;
     margin-top: 10%;
     margin-bottom: 15%;
-    transform: scale(1);
+    transform: trasform scale(1) 1000ms;
     transition-property: transform;
     transition-duration: 1000ms;
     &:hover{
         transform: scale(1.15);
+        box-shadow: 0px 3px 20px 0px #b5b5b5bd;
+        background: brightness(5.5);
     }
     @media screen and (min-width: 750px){
         max-width: 180px;
