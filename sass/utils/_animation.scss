@@ -71,20 +71,12 @@
 .box-choix:hover{
     .validation{
         opacity: 1;
-        animation: slide 700ms linear forwards;
-        @keyframes slide {
-            from{
-                margin-right: -100px;
-            }
-            to{
-                margin-right: 0;
-            }
-            
-        }
+        margin-right: 0px !important;
+        
     }
     .check{
         padding: 0px;
-        animation: rond 700ms ease forwards;
+        animation: rond 700ms ease ;
         @keyframes rond {
             from{
                 padding: 20px;

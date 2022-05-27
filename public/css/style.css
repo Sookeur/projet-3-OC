@@ -68,19 +68,11 @@
 
 .box-choix:hover .validation {
   opacity: 1;
-  animation: slide 700ms linear forwards;
-}
-@keyframes slide {
-  from {
-    margin-right: -100px;
-  }
-  to {
-    margin-right: 0;
-  }
+  margin-right: 0px !important;
 }
 .box-choix:hover .check {
   padding: 0px;
-  animation: rond 700ms ease forwards;
+  animation: rond 700ms ease;
 }
 @keyframes rond {
   from {
@@ -279,20 +271,18 @@ h2 {
 .btn {
   color: white;
   text-decoration: none;
-  box-shadow: 2px 2px 2px grey;
+  box-shadow: 0px 3px 10px grey;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 40px;
   padding: 6%;
-  transform: scale(1);
-  transition-property: transform;
-  transition-duration: 1000ms;
   margin-bottom: 15%;
   margin-top: 5%;
+  transition: all 1000ms;
 }
 .btn:hover {
   transform: scale(1.15);
-  box-shadow: 0px 3px 20px 0px #b5b5b5bd;
-  background-color: brightness(1.5);
+  box-shadow: 0px 3px 20px 0px gray;
+  filter: brightness(1.1);
 }
 @media screen and (min-width: 750px) {
   .btn {
@@ -628,6 +618,7 @@ img {
   height: 100%;
   margin-right: -100px;
   width: 100px;
+  transition: all 700ms;
 }
 .menue .box-choix .check {
   opacity: 1;
@@ -637,26 +628,23 @@ img {
   display: flex;
   color: white;
   text-decoration: none;
-  box-shadow: 2px 2px 2px #b5b5b5bd;
+  box-shadow: 0px 3px 10px gray;
   background: linear-gradient(#FF79DA, #9356DC);
-  border-radius: 30px;
+  border-radius: 40px;
   padding: 6%;
   text-align: center;
   justify-content: center;
   width: 165px;
-  height: 1px;
   margin: auto;
   align-items: center;
   margin-top: 10%;
   margin-bottom: 15%;
-  transform: trasform scale(1) 1000ms;
-  transition-property: transform;
-  transition-duration: 1000ms;
+  transition: all 1000ms;
 }
 .menue .btn_commander:hover {
   transform: scale(1.15);
-  box-shadow: 0px 3px 20px 0px #b5b5b5bd;
-  background: brightness(5.5);
+  box-shadow: 0px 3px 20px 0px gray;
+  filter: brightness(1.1);
 }
 @media screen and (min-width: 750px) {
   .menue .btn_commander {
